@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Librería Lexus</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Libros</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cliente.html">Área Cliente</a>
+    </nav>
+  </header>
+  <main>
+    <div class="catalogo">
+      <!-- LIBRO 1 -->
+      <div class="libro">
+        <img src="img/principe-cruel.jpg" alt="Príncipe Cruel" class="libro-img">
+        <h3>Príncipe Cruel</h3>
+        <p>Autora: Holly Black</p>
+        <p><strong>Precio:</strong> RD$850</p>
+        <button onclick="agregarAlCarrito('Príncipe Cruel - RD$850')">Agregar al carrito</button>
+      </div>
+
+      <!-- LIBRO 2 -->
+      <div class="libro">
+        <img src="img/rey-malvado.jpg" alt="El Rey Malvado" class="libro-img">
+        <h3>El Rey Malvado</h3>
+        <p>Autora: Holly Black</p>
+        <p><strong>Precio:</strong> RD$900</p>
+        <button onclick="agregarAlCarrito('El Rey Malvado - RD$900')">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div id="carrito">
+      <h3>Carrito:</h3>
+      <ul id="lista-carrito"></ul>
+    </div>
+  </main>
+</body>
+</html>
