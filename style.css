@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background-color: #A9D6E5;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  margin: 0 1em;
+  color: #333;
+  text-decoration: none;
+}
+main {
+  padding: 2em;
+}
+.catalogo {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.libro {
+  background-color: #EBD4F0;
+  padding: 1em;
+  border-radius: 5px;
+  width: 220px;
+  text-align: center;
+}
+.libro-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+#carrito {
+  margin-top: 2em;
+}
