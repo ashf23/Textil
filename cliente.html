@@ -2,8 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Área Cliente - Librería Lexus</title>
+  <title>Área del Cliente - Librería Lexus</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    const pedidos = {
+      "ashly luperon": "Tu pedido fue confirmado el 10/07. Estará disponible en 2 días.",
+      "axel luperon": "Tu pedido está en tránsito. Llegará el 18/07.",
+    };
+
+    function buscarPedido() {
+      const nombre = document.getElementById("buscar").value.toLowerCase();
+      const resultado = document.getElementById("resultado");
+
+      if (nombre.trim() === "") {
+        resultado.innerText = "🔍 Por favor, introduce tu nombre completo.";
+      } else if (pedidos[nombre]) {
+        resultado.innerText = `📦 ${pedidos[nombre]}`;
+      } else {
+        resultado.innerText = "❌ No encontramos un pedido con ese nombre.";
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -13,8 +32,23 @@
       <a href="catalogo.html">Catálogo</a>
     </nav>
   </header>
+
   <main>
-    <p>Aquí podrás consultar tus pedidos realizados. (Sección en construcción)</p>
+    <div class="busqueda">
+      <h2>Consulta tu pedido</h2>
+      <input type="text" id="buscar" placeholder="Escribe tu nombre completo...">
+      <button onclick="buscarPedido()">🔎 Buscar</button>
+      <p id="resultado"></p>
+    </div>
+
+    <section class="carrito-resumen">
+      <h2>🛒 Carrito de ejemplo</h2>
+      <ul>
+        <li>Príncipe Cruel - RD$850</li>
+        <li>El Rey Malvado - RD$900</li>
+      </ul>
+      <p><strong>Total:</strong> RD$1750</p>
+    </section>
   </main>
 </body>
 </html>
