@@ -1,40 +1,65 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f7fc;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-header {
-  background-color: #A9D6E5;
-  padding: 1em;
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #A9D6E5, #EBD4F0);
+  padding: 3em 2em;
   text-align: center;
 }
-nav a {
-  margin: 0 1em;
-  color: #333;
-  text-decoration: none;
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
 }
-main {
+.slogan {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* SECCIÓN QUIÉNES SOMOS */
+.quienes-somos {
   padding: 2em;
-}
-.catalogo {
-  display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-}
-.libro {
-  background-color: #EBD4F0;
-  padding: 1em;
-  border-radius: 5px;
-  width: 220px;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
 }
-.libro-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+.quienes-somos h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
 }
-#carrito {
-  margin-top: 2em;
+
+/* BOTONES INICIO */
+.inicio-botones {
+  text-align: center;
+  margin: 2em;
+}
+.boton {
+  background-color: #7E6CAB;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+/* ÁREA CLIENTE */
+.busqueda {
+  padding: 2em;
+  text-align: center;
+}
+.busqueda input {
+  padding: 10px;
+  width: 250px;
+}
+.busqueda button {
+  padding: 10px;
+  margin-left: 10px;
+}
+#resultado {
+  margin-top: 1em;
+  font-weight: bold;
+}
+.carrito-resumen {
+  background-color: #EBD4F0;
+  margin: 2em auto;
+  padding: 1em;
+  max-width: 400px;
+  border-radius: 10px;
 }
